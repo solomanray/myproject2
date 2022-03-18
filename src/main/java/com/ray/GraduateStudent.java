@@ -7,10 +7,10 @@ public class GraduateStudent extends Student {
         this.thesis= thesis;
     }
 
-
+    @Override
     public void print() {
         int average = (programming + math+thesis) /3;
-        System.out.print(name + "\t" + programming + "\t" + math + "\t" +thesis+"\t"+ average);
+        System.out.print(name + "\t" + programming + "\t" + math + "\t" +thesis+"\t"+average );
 
         if (average < 70) {
             System.out.println("*");
