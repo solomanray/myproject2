@@ -1,4 +1,4 @@
-package com.ray;
+package com.ray.score;
 
 public class ScoringNG {
     public static void main(String[] args) {

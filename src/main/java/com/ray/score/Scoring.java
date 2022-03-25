@@ -1,4 +1,4 @@
-package com.ray;
+package com.ray.score;
 
 public class Scoring {
     public static void main(String[] args) {

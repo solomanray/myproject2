@@ -1,4 +1,4 @@
-package com.ray;
+package com.ray.score;
 
 public class Student {
     String name;

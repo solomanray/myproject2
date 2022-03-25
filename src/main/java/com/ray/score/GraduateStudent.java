@@ -1,4 +1,4 @@
-package com.ray;
+package com.ray.score;
 
 public class GraduateStudent extends Student {
     int thesis;

@@ -1,4 +1,4 @@
-package com.ray;
+package com.ray.sales;
 
 public class GoldCustomer extends Customer{
     public GoldCustomer(String id, int price){
