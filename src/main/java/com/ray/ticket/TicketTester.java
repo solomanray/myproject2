@@ -11,7 +11,7 @@ public class TicketTester {
         Station endStaion = null;
         int normal=0;
         int student=0;
-        int elder=0;
+        int elder=1;
         System.out.println("Your start station?  (Taipei:1 ,Taichung:2, Kaohsiung:3"  );
         int choice = Integer.parseInt(scanner.next());
         switch (choice){
