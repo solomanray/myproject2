@@ -4,7 +4,7 @@ public class Customer {
     String id;
     int price;
     int discount;
-    int bonus=0;
+    int bonus;
 
 
     public Customer(String id, int price){
