@@ -1,6 +1,4 @@
-package com.ray.highrail;
-
-import java.util.Scanner;
+package com.ray.ticket;
 
 public class Ticket{
     static final int TAIPEI_CITY = 100;

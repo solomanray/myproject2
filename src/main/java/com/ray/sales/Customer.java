@@ -3,22 +3,24 @@ package com.ray.sales;
 public class Customer {
     String id;
     int price;
-    int payment;
+    int discount;
     int bonus=0;
+
 
     public Customer(String id, int price){
         this.id = id;
         this.price = price;
+
+//      買千送百
+        discount = price/1000*100;
     }
     public Customer(){}
 
     public void print(){
-//      買千送百
-        payment = price-(price/1000*100);
         if (price>=1000) {
-            System.out.println(id + "\t" + price + "\t" + payment + "\t" +"(" +bonus+")");
+            System.out.println(id + "\t" + price + "\t" + (price-discount) + "\t" +"(" +bonus+")");
         }else {
-            System.out.println(id  +"\t" + price + "\t" +"\t" + payment + "\t" + "\t"+"(" +bonus+")");
+            System.out.println(id  +"\t" + price + "\t" +"\t" + (price-discount) + "\t" + "\t"+"(" +bonus+")");
         }
     }
 

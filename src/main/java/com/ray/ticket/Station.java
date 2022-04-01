@@ -1,4 +1,4 @@
-package com.ray.highrail;
+package com.ray.ticket;
 
 public class Station {
 

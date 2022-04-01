@@ -1,15 +1,17 @@
-package com.ray.highrail;
+package com.ray.ticket;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class Tester {
+public class TicketTester {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Station startStaion = null;
         Station endStaion = null;
-        int normal;
-        int student;
-        int elder;
+        int normal=0;
+        int student=0;
+        int elder=0;
         System.out.println("Your start station?  (Taipei:1 ,Taichung:2, Kaohsiung:3"  );
         int choice = Integer.parseInt(scanner.next());
         switch (choice){
@@ -38,10 +40,18 @@ public class Tester {
                 endStaion = Station.KAOHSIUNG;
                 break;
         }
-        System.out.println("How many normal tickets you need?" );
+        List<String> ticketClass = new ArrayList<>();
+        ticketClass.add("normal tickets");
+        ticketClass.add("student tickets");
+        ticketClass.add("elder tickets");
 
-        Ticket ticket1 = new Ticket(startStaion.id,endStaion.id,2,3,3);
-        System.out.print("起站:"+startStaion.name+"\t"+"迄站:"+endStaion.name+"\t");
+        for (int i =0;i<ticketClass.size();i++) {
+            System.out.println("How many "+ticketClass.get(i)+" do you need?");
+
+        }
+
+        Ticket ticket1 = new Ticket(startStaion.id,endStaion.id,normal,student,elder);
+        System.out.print("起站:"+startStaion.name+"\t"+"迄站:"+endStaion.name+"\t"+"一般票:"+endStaion.name+"\t"+"學生票:"+endStaion.name+"\t"+"敬老票:"+endStaion.name+"\t");
         ticket1.print();
 
 
