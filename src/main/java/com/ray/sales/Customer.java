@@ -1,6 +1,6 @@
 package com.ray.sales;
 
-public class Customer {
+public class Customer implements MyInterface{
     String id;
     int price;
     int discount;
@@ -15,7 +15,7 @@ public class Customer {
         discount = price/1000*100;
     }
     public Customer(){}
-
+    @Override
     public void print(){
         if (price>=1000) {
             System.out.println(id + "\t" + price + "\t" + (price-discount) + "\t" +"(" +bonus+")");

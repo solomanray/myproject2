@@ -10,6 +10,6 @@ public class StudentTicket extends Ticket{
 
     @Override
     public int getPrice() {
-        return (int) (super.getPrice()*0.75*student);
+        return (int) (super.getPrice()*0.8*student);
     }
 }

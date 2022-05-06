@@ -1,7 +1,7 @@
 package com.ray.score;
 
-public class Student {
-    String name;
+public class Student implements Printable{
+    public String name;
     int programming;
     int math;
 
@@ -11,10 +11,9 @@ public class Student {
         this.math = math;
     }
 
-    public Student() {
+    public Student() {}
 
-    }
-
+    @Override
     public void print() {
         int average = (programming + math) / 2;
         System.out.print(name + "\t" + programming + "\t" + math + "\t" + average);

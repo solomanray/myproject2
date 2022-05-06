@@ -14,16 +14,16 @@ public class Ticket{
 
 
     public int getPrice() {
-        int n = start + end;
-        switch (n) {
-            case 300:
+        int distance = Math.abs(start-end);
+        switch (distance) {
+            case 100:
+                price = 500;
+                break;
+            case 200:
                 price = 600;
                 break;
-            case 400:
-                price = 1500;
-                break;
-            case 500:
-                price = 900;
+            case 300:
+                price = 1100;
                 break;
         }
         return price;
