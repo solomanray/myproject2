@@ -19,18 +19,37 @@ public class MainWindow {
 
         JButton button = new JButton("Start");
 //        匿名類別 Anonymous class
-        button.addActionListener(new ActionListener() {
+        button.addActionListener(new ActionListener() {public void actionPerformed(ActionEvent actionEvent) {
+                System.out.println("Game Start!!!");
+            }});
+        JButton button1 = new JButton("Easy");
+        JButton button2 = new JButton("Hard");
+        JButton button3 = new JButton("Nightmare");
+
+        button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                System.out.println("Game Start!!!");
-            }
-        });
+                System.out.println("Easy mode");
+            }});
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                System.out.println("Hard mode");
+            }});
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                System.out.println("Nightmare mode");
+            }});
 //        有名類別
 //        MyActionListener listener = new MyActionListener();
 //        button.addActionListener(listener);
 
         frame.setLayout(new FlowLayout());
         frame.add(button);
+        frame.add(button1);
+        frame.add(button2);
+        frame.add(button3);
 
 
 
